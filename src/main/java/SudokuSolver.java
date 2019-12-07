@@ -7,6 +7,11 @@ import java.util.Scanner;
 
 public class SudokuSolver{
     public static void main(String[] args) throws Exception {
+
+        SudokuGUI sudokuGUI=new SudokuGUI();
+
+        sudokuGUI.showGUI();
+
         Scanner cin= new Scanner(System.in);
         System.out.println("Enter the name of input file");
         String inputFileName= cin.next();
