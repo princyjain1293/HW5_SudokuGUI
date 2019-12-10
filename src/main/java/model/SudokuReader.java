@@ -11,10 +11,6 @@ public class SudokuReader {
     public String[][]  board=null;
     public void getPuzzle(String inputFileName) throws IOException {
 
-        //List<String> domain = new ArrayList<>();
-
-
-
             BufferedReader br = new BufferedReader(new FileReader(inputFileName));
 
             side = Integer.valueOf(br.readLine());

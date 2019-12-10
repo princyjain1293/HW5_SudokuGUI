@@ -1,0 +1,15 @@
+
+1 2 3 4 
+2 - - 1 
+1 - - 4 
+- - 4 - 
+- 2 - - 
+
+Solution:
+2 4 3 1 
+1 3 2 4 
+3 1 4 2 
+4 2 1 3 
+Strategy Used: Backtracking
+Time taken: 0.015
+Number of Iterations Done: 12
