@@ -18,13 +18,7 @@ public class Cell {
         value = UNASSIGNED;
     }
 
-    public int getX() {
-        return x;
-    }
 
-    public int getY() {
-        return y;
-    }
 
     public int getValue() {
         return value;
@@ -37,8 +31,6 @@ public class Cell {
         }
     }
 
-    public void resetValue() {
-        value = UNASSIGNED;
-    }
+
 
 }

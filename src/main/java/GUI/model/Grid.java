@@ -18,9 +18,7 @@ public class Grid {
         }
     }
 
-    public Cell[][] getGrid() {
-        return grid;
-    }
+
 
     public Cell getCell(int x, int y) {
 

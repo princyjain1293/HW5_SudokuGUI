@@ -2,7 +2,7 @@ package GUI.Driver;
 import javax.swing.JFrame;
 
 import GUI.controller.Controller;
-import GUI.model.Game;
+
 import GUI.view.View;
 
 
@@ -10,9 +10,9 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        Game game = new Game(); // model
+//        Game game = new Game(); // model
         View view = new View(); // view
-        Controller controller = new Controller(game, view); // controller
+        Controller controller = new Controller(view); // controller
 
         JFrame frame = new JFrame("Sudoku Solver");
         frame.add(view.getOuterPanel());

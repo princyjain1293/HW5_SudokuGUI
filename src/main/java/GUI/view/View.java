@@ -1,24 +1,22 @@
 package GUI.view;
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
-import java.awt.Insets;
-
 import javax.swing.*;
 
 import static java.awt.Component.CENTER_ALIGNMENT;
 
 public class View {
 
-    private static final int SIZE = 9;
+    private static int SIZE = 9;
     private JPanel outer;
     private JPanel sudokuPanel;
     private JPanel topPanel, bottomPanel;
 
-    public JButton solveButton, resetButton, undoButton;
-    public JLabel msgLabel;
-    public JTextField[][] places;
+    public JButton resetButton, loadButton, saveButton;
+    public JButton backtrackingButton, dfsButton, stochasticButton,onlyoneButton;
+
+    public static JTextField[][] places;
 
     public View() {
 
@@ -38,54 +36,42 @@ public class View {
 
         for (int r = 0; r < SIZE; r++) {
             for (int c = 0; c < SIZE; c++) {
-                places[r][c] = new JTextField("0");
+                places[r][c] = new JTextField("");
                 places[r][c].setHorizontalAlignment((int) CENTER_ALIGNMENT);
                 sudokuPanel.add(places[r][c]);
             }
         }
         outer.add(sudokuPanel);
 
-        //buildSudoku();
     }
 
     private void setupTopPanel() {
 
         topPanel = new JPanel();
         topPanel.setPreferredSize(new Dimension(outer.getWidth(), 30));
-        solveButton = new JButton("Solve");
         resetButton = new JButton("Reset");
-        undoButton = new JButton("Undo last cell");
-        topPanel.add(solveButton);
+        loadButton = new JButton("Load");
+        saveButton = new JButton("Save");
         topPanel.add(resetButton);
-        topPanel.add(undoButton);
+        topPanel.add(loadButton);
+        topPanel.add(saveButton);
         outer.add(topPanel, BorderLayout.NORTH);
     }
 
     private void setupBottomPanel() {
 
-        bottomPanel = new JPanel(new BorderLayout());
+        bottomPanel = new JPanel();
         bottomPanel.setPreferredSize(new Dimension(outer.getWidth(), 30));
-        msgLabel = new JLabel();
-        msgLabel.setHorizontalAlignment(JLabel.CENTER);
-        bottomPanel.add(msgLabel, BorderLayout.CENTER);
+        backtrackingButton= new JButton("Back Tracking");
+        dfsButton = new JButton("Depth First Search");
+        stochasticButton= new JButton("Stochastic Search");
+        onlyoneButton= new JButton("Only One Possibility");
+        bottomPanel.add(backtrackingButton, BorderLayout.CENTER);
+        bottomPanel.add(dfsButton);
+        bottomPanel.add(stochasticButton);
+        bottomPanel.add(onlyoneButton);
         outer.add(bottomPanel, BorderLayout.SOUTH);
     }
-
-//    private void buildSudoku() {
-//
-//        Insets buttonMargin = new Insets(25, 25, 25, 25);
-//        for (int i = 0; i < SIZE; i++) {
-//            for (int j = 0; j < SIZE; j++) {
-//
-//                JButton b = new JButton();
-//                b.setMargin(buttonMargin);
-//                b.setBackground(Color.WHITE);
-//                b.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY, 3));
-//                numButtons[j][i] = b;
-//                sudokuPanel.add(numButtons[j][i]);
-//            }
-//        }
-//    }
 
     public final JComponent getOuterPanel() {
         return outer;

@@ -1,169 +1,180 @@
 package GUI.controller;
-import java.awt.Font;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Stack;
 
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
+import Algorithms.*;
 import GUI.model.Cell;
-import GUI.model.Game;
+
 import GUI.view.View;
-import com.sun.xml.internal.ws.util.StringUtils;
+
+import model.SudokuReader;
+import model.SudokuWriter;
 
 
-public class Controller {
+public class Controller extends JPanel {
 
-    private static final int SIZE = 9;
-    private Game game;
+    private static int SIZE = 9;
+//    private Game game;
     private View view;
     private Cell[][] sudokuGrid;
     private Stack<ArrayList<Integer>> undoStack;
+    private String[][] board;
+    private String[] domain;
+    private String[][] puzzle;
+    private SudokuAlgorithms sudokuAlgorithms;
+     SudokuWriter sudokuWriter= new SudokuWriter();
 
-    public Controller(Game g, View v) {
 
-        game = g;
+    public Controller( View v) {
+
+//        game = g;
         view = v;
-        sudokuGrid = game.getGrid();
-//        for (int i = 0; i < SIZE; i++) {
-//            for (int j = 0; j < SIZE; j++) {
-//                view.numButtons[i][j].addActionListener(createActionListener(i, j));
-//                view.numButtons[i][j].setText("");
-//                view.numButtons[i][j].setFont(new Font("Helvetica", Font.PLAIN, 16)); // large font for initial values
-//            }
-//        }
+//        sudokuGrid = game.getGrid();
+
 
         undoStack = new Stack<ArrayList<Integer>>();
+
         view.resetButton.addActionListener(resetActionListener());
-        view.solveButton.addActionListener(solveActionListener());
-        view.undoButton.addActionListener(undoActionListener());
-        view.msgLabel.setText("Click on cells to enter values");
+        view.loadButton.addActionListener(loadActionListener());
+        view.backtrackingButton.addActionListener(backTrackingActionListener());
+        view.dfsButton.addActionListener(dfsActionListener());
+        view.stochasticButton.addActionListener(stochasticActionListener());
+        view.onlyoneButton.addActionListener(onlyOneActionListener());
     }
 
-    private void clickedUndoButton() {
+    private void loadFile() throws IOException {
+        JFileChooser fileChooser = new JFileChooser();
+        int returnVal = fileChooser.showDialog(this, "Open");
+        File file;
 
-        if (!undoStack.isEmpty()) {
+        if (returnVal != JFileChooser.APPROVE_OPTION) {
 
-            ArrayList<Integer> coordinates = undoStack.pop();
-            int x = coordinates.get(0);
-            int y = coordinates.get(1);
-            view.numButtons[x][y].setText(""); // undo view
-            view.numButtons[x][y].setFont(new Font("Helvetica", Font.PLAIN, 16));
-            sudokuGrid[y][x].resetValue(); // undo model
-            view.msgLabel.setText("Undone cell");
-        }
-    }
-
-    private boolean isNumeric(String str){
-        try{
-            Integer.parseInt(str);
-            return true;
-        }
-        catch (NumberFormatException e){
-            return false;
-        }
-    }
-
-    private void clickedSudokuButton(int i, int j) {
-
-        String s = (String) JOptionPane.showInputDialog(null, "Enter a value [1-9]:");
-
-        if (s == null) { // user pressed Cancel
-            return;
         }
 
-        if (!isNumeric(s)) {
-            view.msgLabel.setText("Invalid input");
-            return;
-        }
+        file = fileChooser.getSelectedFile();
+        String inputFileName=file.getName();
+        String inputPath="Input\\"+inputFileName;
+        SudokuReader sudokuReader= new SudokuReader();
+        sudokuReader.getPuzzle(inputPath);
+        board= sudokuReader.getBoard();
+        SIZE = sudokuReader.getSide();
+        domain= sudokuReader.getDomain();
+        puzzle=sudokuReader.getActualBoard();
 
-        int num = Integer.parseInt(s);
-        if (num >= 1 && num <= SIZE) {
-            view.numButtons[i][j].setText(s); // update view
-            view.numButtons[i][j].setFont(new Font("Helvetica", Font.BOLD, 28)); // large font for initial values
-            sudokuGrid[j][i].setValue(num); // update model
+        for (int r = 0; r < SIZE; r++) {
+            for (int c = 0; c < SIZE; c++) {
+                View.places[r][c].setText(board[r][c]);
 
-            // store coordinates for Undo functionality
-            ArrayList<Integer> coordinates = new ArrayList<Integer>();
-            coordinates.add(i);
-            coordinates.add(j);
-            undoStack.push(coordinates);
-            view.msgLabel.setText("Value set to " + s);
-        } else {
-            view.msgLabel.setText("Invalid input");
-        }
-    }
-
-    private void resetGame() {
-
-        for (int i = 0; i < SIZE; i++) {
-            for (int j = 0; j < SIZE; j++) {
-                view.numButtons[i][j].setText(""); // reset view
-                view.numButtons[i][j].setFont(new Font("Helvetica", Font.PLAIN, 16));
-                sudokuGrid[i][j].resetValue(); // reset model
-                undoStack.clear();
             }
         }
-        view.msgLabel.setText("Reset");
     }
 
-    private void solveGame() {
+    private ActionListener loadActionListener() {
+        return new ActionListener() {
 
-        boolean result = game.solveSudoku();
-        if (result) {
-            for (int i = 0; i < SIZE; i++) {
-                for (int j = 0; j < SIZE; j++) {
-                    int val = sudokuGrid[j][i].getValue();
-                    String numString = String.valueOf(val);
-                    view.numButtons[i][j].setText(numString); // set view
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    loadFile();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
                 }
             }
-            view.msgLabel.setText("Solved");
-        } else {
-            view.msgLabel.setText("Invalid configuration");
-        }
-    }
-
-    private ActionListener createActionListener(int i, int j) {
-        return new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                clickedSudokuButton(i, j);
-            }
         };
     }
-
-    private ActionListener undoActionListener() {
-        return new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                clickedUndoButton();
-            }
-        };
-    }
-
     private ActionListener resetActionListener() {
         return new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                resetGame();
+                resetGrid();
             }
         };
     }
-
-    private ActionListener solveActionListener() {
+    private ActionListener backTrackingActionListener() {
         return new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                solveGame();
+                sudokuAlgorithms=new BackTracking(board,puzzle,SIZE,domain,"jkh",sudokuWriter);
+                try {
+                    sudokuAlgorithms.solve();
+                    updateGrid();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
             }
         };
+    }
+
+    private ActionListener dfsActionListener() {
+        return new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                sudokuAlgorithms=new DepthFirstSearch(board,puzzle,SIZE,domain,"jkh",sudokuWriter);
+                try {
+                    sudokuAlgorithms.solve();
+                    updateGrid();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        };
+    }
+
+    private ActionListener stochasticActionListener() {
+        return new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                sudokuAlgorithms=new StochasticSearch(board,puzzle,SIZE,domain,"jkh",sudokuWriter);
+                try {
+                    sudokuAlgorithms.solve();
+                    updateGrid();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        };
+    }
+    private ActionListener onlyOneActionListener() {
+        return new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                sudokuAlgorithms=new OnlyOneValue(board,puzzle,SIZE,domain,"jkh",sudokuWriter);
+                try {
+                    sudokuAlgorithms.solve();
+                    updateGrid();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        };
+    }
+
+    private void updateGrid(){
+        for (int r = 0; r < SIZE; r++) {
+            for (int c = 0; c < SIZE; c++) {
+                View.places[r][c].setText(board[r][c]);
+            }
+        }
+    }
+    private void resetGrid(){
+        for (int r = 0; r < SIZE; r++) {
+            for (int c = 0; c < SIZE; c++) {
+                View.places[r][c].setText("");
+            }
+        }
     }
 
 }
