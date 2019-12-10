@@ -1,7 +1,7 @@
-package Algorithms;
+package algorithms;
 import java.io.IOException;
 
-public class BackTracking extends SudokuAlgorithms{
+public class DepthFirstSearch extends SudokuAlgorithms{
     public String[][] puzzle;
     public int size;
     public String[] domain;
@@ -9,9 +9,7 @@ public class BackTracking extends SudokuAlgorithms{
     public int count=0;
     public String[][] board;
 
-
-
-    public BackTracking(String[][] puzzle,String[][] board, int size,String[] domain){
+    public DepthFirstSearch(String[][] puzzle,String[][] board, int size,String[] domain){
         this.puzzle=puzzle;
         this.size=size;
         this.domain=domain;
@@ -20,11 +18,10 @@ public class BackTracking extends SudokuAlgorithms{
     }
 
 
-
     public int[] findBlankLocation(){
         int[] cell = new int[2];
-        for(int i=0;i<size;i++){
-            for(int j=0;j<size;j++){
+        for(int j=0;j<size;j++){
+            for(int i=0;i<size;i++){
                 if(puzzle[i][j]=="0"){
                     cell[0]=i;
                     cell[1]=j;
@@ -104,7 +101,6 @@ public class BackTracking extends SudokuAlgorithms{
     public String[][] getPuzzle(){
         return puzzle;
     }
-    //public String[][] getBoard(){return board;}
 
 
 }

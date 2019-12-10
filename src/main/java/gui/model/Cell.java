@@ -1,4 +1,4 @@
-package GUI.model;
+package gui.model;
 public class Cell {
 
     private static final int SIZE = 9;

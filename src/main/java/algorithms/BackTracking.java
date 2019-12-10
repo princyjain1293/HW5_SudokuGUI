@@ -1,9 +1,7 @@
-package Algorithms;
+package algorithms;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Random;
 
-public class StochasticSearch extends SudokuAlgorithms{
+public class BackTracking extends SudokuAlgorithms{
     public String[][] puzzle;
     public int size;
     public String[] domain;
@@ -13,10 +11,11 @@ public class StochasticSearch extends SudokuAlgorithms{
 
 
 
-    public StochasticSearch(String[][] puzzle,String[][] board, int size,String[] domain){
+    public BackTracking(String[][] puzzle,String[][] board, int size,String[] domain){
         this.puzzle=puzzle;
         this.size=size;
         this.domain=domain;
+        this.outputFileName=outputFileName;
         this.board=board;
     }
 
@@ -77,25 +76,13 @@ public class StochasticSearch extends SudokuAlgorithms{
 
         if(row==-1)
             return true;
-
-        ArrayList<String> domainArray = new ArrayList<>();
-        for(int i=0;i<domain.length;i++)
-        {
-            domainArray.add(domain[i]);
-        }
-
-        Random random = new Random();
-
-        while (domainArray.size()>0){
-            int i=random.nextInt(domainArray.size());
-            String s=domainArray.get(i);
+        for(String s:domain){
             if(isSafe(row,col,s)){
                 puzzle[row][col]=s;
                 if(solveSudoku())
                     return true;
                 puzzle[row][col]="0";
             }
-            domainArray.remove(s);
         }
         return false;
     }
@@ -117,5 +104,7 @@ public class StochasticSearch extends SudokuAlgorithms{
     public String[][] getPuzzle(){
         return puzzle;
     }
+    //public String[][] getBoard(){return board;}
+
 
 }

@@ -1,9 +1,9 @@
 
 import javax.swing.JFrame;
 
-import GUI.controller.Controller;
+import gui.controller.Controller;
 
-import GUI.view.View;
+import gui.view.View;
 
 
 public class Driver {

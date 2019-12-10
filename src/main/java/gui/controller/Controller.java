@@ -1,11 +1,11 @@
-package GUI.controller;
+package gui.controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 import javax.swing.*;
-import Algorithms.*;
-import GUI.view.View;
+import algorithms.*;
+import gui.view.View;
 import common.SudokuReader;
 
 public class Controller extends JPanel {

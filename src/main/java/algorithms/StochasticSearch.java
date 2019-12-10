@@ -1,7 +1,9 @@
-package Algorithms;
+package algorithms;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Random;
 
-public class DepthFirstSearch extends SudokuAlgorithms{
+public class StochasticSearch extends SudokuAlgorithms{
     public String[][] puzzle;
     public int size;
     public String[] domain;
@@ -9,19 +11,21 @@ public class DepthFirstSearch extends SudokuAlgorithms{
     public int count=0;
     public String[][] board;
 
-    public DepthFirstSearch(String[][] puzzle,String[][] board, int size,String[] domain){
+
+
+    public StochasticSearch(String[][] puzzle,String[][] board, int size,String[] domain){
         this.puzzle=puzzle;
         this.size=size;
         this.domain=domain;
-        this.outputFileName=outputFileName;
         this.board=board;
     }
 
 
+
     public int[] findBlankLocation(){
         int[] cell = new int[2];
-        for(int j=0;j<size;j++){
-            for(int i=0;i<size;i++){
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
                 if(puzzle[i][j]=="0"){
                     cell[0]=i;
                     cell[1]=j;
@@ -73,13 +77,25 @@ public class DepthFirstSearch extends SudokuAlgorithms{
 
         if(row==-1)
             return true;
-        for(String s:domain){
+
+        ArrayList<String> domainArray = new ArrayList<>();
+        for(int i=0;i<domain.length;i++)
+        {
+            domainArray.add(domain[i]);
+        }
+
+        Random random = new Random();
+
+        while (domainArray.size()>0){
+            int i=random.nextInt(domainArray.size());
+            String s=domainArray.get(i);
             if(isSafe(row,col,s)){
                 puzzle[row][col]=s;
                 if(solveSudoku())
                     return true;
                 puzzle[row][col]="0";
             }
+            domainArray.remove(s);
         }
         return false;
     }
@@ -101,6 +117,5 @@ public class DepthFirstSearch extends SudokuAlgorithms{
     public String[][] getPuzzle(){
         return puzzle;
     }
-
 
 }

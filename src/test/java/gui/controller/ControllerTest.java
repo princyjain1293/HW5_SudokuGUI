@@ -1,6 +1,6 @@
-package GUI.controller;
+package gui.controller;
 
-import GUI.view.View;
+import gui.view.View;
 import org.junit.Test;
 
 import javax.swing.*;

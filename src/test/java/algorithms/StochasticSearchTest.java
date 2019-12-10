@@ -1,4 +1,4 @@
-package Algorithms;
+package algorithms;
 
 import common.SudokuReader;
 import org.junit.Test;
