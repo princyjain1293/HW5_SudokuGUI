@@ -10,9 +10,8 @@ public class Driver {
 
     public static void main(String[] args) {
 
-//        Game game = new Game(); // common
-        View view = new View(); // view
-        Controller controller = new Controller(view); // controller
+        View view = new View();
+        Controller controller = new Controller(view);
 
         JFrame frame = new JFrame("Sudoku Solver");
         frame.add(view.getOuterPanel());
