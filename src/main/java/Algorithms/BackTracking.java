@@ -1,8 +1,4 @@
 package Algorithms;
-
-
-import model.SudokuWriter;
-
 import java.io.IOException;
 
 public class BackTracking extends SudokuAlgorithms{
@@ -10,18 +6,16 @@ public class BackTracking extends SudokuAlgorithms{
     public int size;
     public String[] domain;
     public String outputFileName;
-    SudokuWriter sudokuWriter;
     public int count=0;
     public String[][] board;
 
 
 
-    public BackTracking(String[][] puzzle,String[][] board, int size,String[] domain,String outputFileName,SudokuWriter sudokuWriter){
+    public BackTracking(String[][] puzzle,String[][] board, int size,String[] domain){
         this.puzzle=puzzle;
         this.size=size;
         this.domain=domain;
         this.outputFileName=outputFileName;
-        this.sudokuWriter=sudokuWriter;
         this.board=board;
     }
 
@@ -104,9 +98,6 @@ public class BackTracking extends SudokuAlgorithms{
         else{
             System.out.println("The sudoku puzzle is not solvable");
         }
-
-        sudokuWriter.writeToText(outputFileName,puzzle,board,domain,count,size,super.getTime(),"Backtracking");
-
         return puzzle;
 
     }

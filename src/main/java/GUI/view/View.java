@@ -13,7 +13,7 @@ public class View {
     private JPanel sudokuPanel;
     private JPanel topPanel, bottomPanel;
 
-    public JButton resetButton, loadButton, saveButton;
+    public JButton resetButton, loadButton;
     public JButton backtrackingButton, dfsButton, stochasticButton,onlyoneButton;
 
     public static JTextField[][] places;
@@ -51,10 +51,8 @@ public class View {
         topPanel.setPreferredSize(new Dimension(outer.getWidth(), 30));
         resetButton = new JButton("Reset");
         loadButton = new JButton("Load");
-        saveButton = new JButton("Save");
         topPanel.add(resetButton);
         topPanel.add(loadButton);
-        topPanel.add(saveButton);
         outer.add(topPanel, BorderLayout.NORTH);
     }
 

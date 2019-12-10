@@ -1,8 +1,6 @@
-package model;
+package common;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class SudokuReaderTest {
 

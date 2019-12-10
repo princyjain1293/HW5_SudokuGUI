@@ -1,4 +1,4 @@
-package model;
+package common;
 
 public class Validator {
     public static boolean validatePerfectSquares(String[][] board){

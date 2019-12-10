@@ -1,47 +1,23 @@
 package GUI.controller;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Stack;
-
-
 import javax.swing.*;
-
 import Algorithms.*;
-import GUI.model.Cell;
-
 import GUI.view.View;
-
-import model.SudokuReader;
-import model.SudokuWriter;
-
+import common.SudokuReader;
 
 public class Controller extends JPanel {
 
     private static int SIZE = 9;
-//    private Game game;
     private View view;
-    private Cell[][] sudokuGrid;
-    private Stack<ArrayList<Integer>> undoStack;
     private String[][] board;
     private String[] domain;
     private String[][] puzzle;
     private SudokuAlgorithms sudokuAlgorithms;
-     SudokuWriter sudokuWriter= new SudokuWriter();
-
-
     public Controller( View v) {
-
-//        game = g;
         view = v;
-//        sudokuGrid = game.getGrid();
-
-
-        undoStack = new Stack<ArrayList<Integer>>();
-
         view.resetButton.addActionListener(resetActionListener());
         view.loadButton.addActionListener(loadActionListener());
         view.backtrackingButton.addActionListener(backTrackingActionListener());
@@ -54,9 +30,8 @@ public class Controller extends JPanel {
         JFileChooser fileChooser = new JFileChooser();
         int returnVal = fileChooser.showDialog(this, "Open");
         File file;
-
         if (returnVal != JFileChooser.APPROVE_OPTION) {
-
+            return;
         }
 
         file = fileChooser.getSelectedFile();
@@ -104,7 +79,7 @@ public class Controller extends JPanel {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                sudokuAlgorithms=new BackTracking(board,puzzle,SIZE,domain,"jkh",sudokuWriter);
+                sudokuAlgorithms=new BackTracking(board,puzzle,SIZE,domain);
                 try {
                     sudokuAlgorithms.solve();
                     updateGrid();
@@ -120,7 +95,7 @@ public class Controller extends JPanel {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                sudokuAlgorithms=new DepthFirstSearch(board,puzzle,SIZE,domain,"jkh",sudokuWriter);
+                sudokuAlgorithms=new DepthFirstSearch(board,puzzle,SIZE,domain);
                 try {
                     sudokuAlgorithms.solve();
                     updateGrid();
@@ -136,7 +111,7 @@ public class Controller extends JPanel {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                sudokuAlgorithms=new StochasticSearch(board,puzzle,SIZE,domain,"jkh",sudokuWriter);
+                sudokuAlgorithms=new StochasticSearch(board,puzzle,SIZE,domain);
                 try {
                     sudokuAlgorithms.solve();
                     updateGrid();
@@ -151,7 +126,7 @@ public class Controller extends JPanel {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                sudokuAlgorithms=new OnlyOneValue(board,puzzle,SIZE,domain,"jkh",sudokuWriter);
+                sudokuAlgorithms=new OnlyOneValue(board,puzzle,SIZE,domain);
                 try {
                     sudokuAlgorithms.solve();
                     updateGrid();

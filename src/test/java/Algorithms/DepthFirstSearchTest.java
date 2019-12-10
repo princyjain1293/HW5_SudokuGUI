@@ -1,7 +1,6 @@
 package Algorithms;
 
-import model.SudokuReader;
-import model.SudokuWriter;
+import common.SudokuReader;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -16,9 +15,8 @@ public class DepthFirstSearchTest {
         String outputPath="Output\\Puzzle-4x4-0101.txt";
 
         SudokuReader sudokuReader= new SudokuReader();
-        SudokuWriter sudokuWriter=new SudokuWriter();
         sudokuReader.getPuzzle(inputPath);
-        SudokuAlgorithms sudokuAlgorithms= new DepthFirstSearch(sudokuReader.getBoard(),sudokuReader.getActualBoard(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
+        SudokuAlgorithms sudokuAlgorithms= new DepthFirstSearch(sudokuReader.getBoard(),sudokuReader.getActualBoard(),sudokuReader.getSide(),sudokuReader.getDomain());
         sudokuAlgorithms.solveSudoku();
         String[][] actualPuzzle=sudokuAlgorithms.getPuzzle();
         String[][] puzzle= {{"2","4","3","1"},{"1","3","2","4"},{"3","1","4","2"},{"4","2","1","3"}};
@@ -62,9 +60,8 @@ public class DepthFirstSearchTest {
         String outputPath="Output\\Puzzle-4x4-0101.txt";
 
         SudokuReader sudokuReader= new SudokuReader();
-        SudokuWriter sudokuWriter= new SudokuWriter();
         sudokuReader.getPuzzle(inputPath);
-        SudokuAlgorithms sudokuAlgorithms= new DepthFirstSearch(sudokuReader.getBoard(),sudokuReader.getActualBoard(),sudokuReader.getSide(),sudokuReader.getDomain(),outputPath,sudokuWriter);
+        SudokuAlgorithms sudokuAlgorithms= new DepthFirstSearch(sudokuReader.getBoard(),sudokuReader.getActualBoard(),sudokuReader.getSide(),sudokuReader.getDomain());
         boolean solvable=sudokuAlgorithms.solveSudoku();
         sudokuAlgorithms.printSolution(solvable);
     }

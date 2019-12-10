@@ -1,7 +1,4 @@
 package Algorithms;
-
-import model.SudokuWriter;
-
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -10,17 +7,13 @@ public class OnlyOneValue extends SudokuAlgorithms {
     public String[][] puzzle;
     public int size;
     public String[] domain;
-    public String outputFileName;
-    SudokuWriter sudokuWriter;
     public int count=0;
     public String[][] board;
 
-    public OnlyOneValue(String[][] puzzle,String[][] board, int size,String[] domain,String outputFileName,SudokuWriter sudokuWriter){
+    public OnlyOneValue(String[][] puzzle,String[][] board, int size,String[] domain){
         this.puzzle=puzzle;
         this.size=size;
         this.domain=domain;
-        this.outputFileName=outputFileName;
-        this.sudokuWriter=sudokuWriter;
         this.board=board;
     }
 
@@ -55,7 +48,7 @@ public class OnlyOneValue extends SudokuAlgorithms {
                 if(count>1){
                     System.out.println("Cannot Solve with one value");
                     System.out.println("Moving to backtracking");
-                    SudokuAlgorithms sudokuAlgorithmsNew= new BackTracking(puzzle,board,size,domain,outputFileName,sudokuWriter);
+                    SudokuAlgorithms sudokuAlgorithmsNew= new BackTracking(puzzle,board,size,domain);
                     sudokuAlgorithmsNew.solve();
                     return false;
                 }
@@ -77,9 +70,6 @@ public class OnlyOneValue extends SudokuAlgorithms {
         else{
             System.out.println("The sudoku puzzle is not solvable");
         }
-
-        sudokuWriter.writeToText(outputFileName,puzzle,board,domain,count,size,super.getTime(),"Only one Value");
-
         return puzzle;
 
     }

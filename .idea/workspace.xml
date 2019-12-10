@@ -2,23 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95a63527-e555-4a48-85ef-04338df9e638" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/GUI/model/CellTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GUI/controller/ControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/Puzzle-4x4-0101.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Puzzle-4x4-0101.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/Driver/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI/Driver/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jkh" beforeDir="false" afterPath="$PROJECT_DIR$/jkh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Algorithms/BackTracking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Algorithms/BackTracking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Algorithms/DepthFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Algorithms/DepthFirstSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Algorithms/OnlyOneValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Algorithms/OnlyOneValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Algorithms/StochasticSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Algorithms/StochasticSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/Driver/Driver.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/model/Game.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/GUI/view/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/GUI/view/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/Driver/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/Driver/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/SudokuGUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/SudokuGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/SudokuSolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/SudokuReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/SudokuWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/model/Validator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/Algorithms/BackTrackingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/Algorithms/BackTrackingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/Algorithms/DepthFirstSearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/Algorithms/DepthFirstSearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/Algorithms/OnlyOneValueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/Algorithms/OnlyOneValueTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/Algorithms/StochasticSearchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/Algorithms/StochasticSearchTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/Algorithms/SudokuAlgorithmsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/Algorithms/SudokuAlgorithmsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/model/SudokuReaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/model/SudokuWriterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/model/ValidatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithms/BackTracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algorithms/BackTracking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithms/DepthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algorithms/DepthFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithms/OnlyOneValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algorithms/OnlyOneValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Algorithms/StochasticSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Algorithms/StochasticSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/Driver/Driver.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/model/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/model/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/model/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/model/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/model/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SudokuGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SudokuSolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/SudokuWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/SudokuReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/SudokuReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Algorithms/DepthFirstSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Algorithms/DepthFirstSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Algorithms/OnlyOneValueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Algorithms/OnlyOneValueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Algorithms/StochasticSearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Algorithms/StochasticSearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Algorithms/SudokuAlgorithmsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Algorithms/SudokuAlgorithmsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/common/SudokuWriterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/SudokuReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/SudokuReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/ValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/common/ValidatorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -30,13 +63,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/HW5_SudokuGUI$All_in_HW5_SudokuGUI_test.ic" NAME="All in HW5_SudokuGUI.test Coverage Results" MODIFIED="1575943916764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/HW5_SudokuGUI$ControllerTest.ic" NAME="ControllerTest Coverage Results" MODIFIED="1575948380348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>GUI.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/HW5_SudokuGUI$All_in_HW5_SudokuGUI_test.ic" NAME="All in HW5_SudokuGUI.test Coverage Results" MODIFIED="1575948077220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/HW5_SudokuGUI$CellTest.ic" NAME="CellTest Coverage Results" MODIFIED="1575943709855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>GUI.model.*</FILTER>
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="127" />
+    <option name="myElementSize" value="124" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -46,10 +82,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/BackTracking.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="308">
+              <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/GUI/controller/ControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,59 +106,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controller/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="230">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/OnlyOneValueTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/StochasticSearchTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/SudokuAlgorithmsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-48">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3237#3238#0" expanded="true" />
-                <element signature="e#3280#3281#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Driver/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/model/Cell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/GUI/model/CellTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/model/Grid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -118,30 +147,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUI/view/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SudokuGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="264">
+              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1419#1420#0" expanded="true" />
-                <element signature="e#1468#1469#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SudokuSolver.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/common/SudokuReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-616">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="88">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/common/ValidatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/DepthFirstSearchTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="63" column="165" selection-start-line="63" selection-start-column="165" selection-end-line="63" selection-end-column="165" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,11 +198,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main</find>
       <find>open</find>
       <find>jfile</find>
       <find>square</find>
       <find>grid</find>
+      <find>main</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,17 +213,28 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Test1.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/SudokuGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SudokuSolver.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/SudokuReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/SudokuGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Algorithms/BackTracking.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/model/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/Driver/Driver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/view/View.java" />
         <option value="$PROJECT_DIR$/src/test/java/GUI/model/CellTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/model/Cell.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/model/Grid.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SudokuSolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/SudokuReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/view/View.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Driver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithms/BackTracking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithms/DepthFirstSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithms/OnlyOneValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Algorithms/StochasticSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Algorithms/DepthFirstSearchTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Algorithms/OnlyOneValueTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Algorithms/StochasticSearchTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Algorithms/SudokuAlgorithmsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GUI/controller/ControllerTest.java" />
       </list>
     </option>
   </component>
@@ -204,8 +255,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,6 +288,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HW5_SudokuGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HW5_SudokuGUI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HW5_SudokuGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HW5_SudokuGUI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,15 +314,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5_SudokuGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5_SudokuGUI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-              <item name="Driver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HW5_SudokuGUI" type="b2602c69:ProjectViewProjectNode" />
@@ -279,14 +337,6 @@
               <item name="HW5_SudokuGUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="HW5_SudokuGUI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HW5_SudokuGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HW5_SudokuGUI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -302,7 +352,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="Algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HW5_SudokuGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HW5_SudokuGUI" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -311,7 +369,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575944063689" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575948420670" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -320,6 +378,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="GUI.controller" />
       <recent name="GUI.model" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -338,7 +397,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in HW5_SudokuGUI.test">
+  <component name="RunManager" selected="JUnit.ControllerTest">
+    <configuration name="Driver (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Driver" />
+      <module name="HW5_SudokuGUI.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUI.Driver.Driver" />
       <module name="HW5_SudokuGUI.main" />
@@ -348,13 +414,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SudokuGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SudokuGUI" />
-      <module name="HW5_SudokuGUI.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -374,16 +433,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CellTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW5_SudokuGUI.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GUI.model.*" />
+          <option name="PATTERN" value="GUI.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="GUI.model" />
-      <option name="MAIN_CLASS_NAME" value="GUI.model.CellTest" />
+      <option name="PACKAGE_NAME" value="GUI.controller" />
+      <option name="MAIN_CLASS_NAME" value="GUI.controller.ControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -391,11 +450,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ControllerTest" />
         <item itemvalue="JUnit.All in HW5_SudokuGUI.test" />
-        <item itemvalue="JUnit.CellTest" />
+        <item itemvalue="Application.Driver (1)" />
         <item itemvalue="Application.Driver" />
         <item itemvalue="Application.SudokuSolver" />
-        <item itemvalue="Application.SudokuGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -425,12 +484,24 @@
     <history-entry file="All_in_HW5_SudokuGUI_test - 2019.12.09 at 19h 12m 50s.xml">
       <configuration name="All in HW5_SudokuGUI.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_HW5_SudokuGUI_test - 2019.12.09 at 20h 22m 10s.xml">
+      <configuration name="All in HW5_SudokuGUI.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest - 2019.12.09 at 20h 25m 27s.xml">
+      <configuration name="ControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest - 2019.12.09 at 20h 25m 46s.xml">
+      <configuration name="ControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest - 2019.12.09 at 20h 27m 01s.xml">
+      <configuration name="ControllerTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -438,7 +509,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -449,7 +520,6 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.28441754" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -459,38 +529,49 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info active="true" anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.3570348" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32980332" />
+      <window_info anchor="right" id="Gradle" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.28441754" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Sudoku.form" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Sudoku.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Test1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/SudokuGUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Validator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/SudokuReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/SudokuAlgorithms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SudokuSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-616">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -519,9 +600,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/model/Game.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/GUI/model/CellTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Driver/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SudokuGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="243">
+          <caret line="119" column="25" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1419#1420#0" expanded="true" />
@@ -530,60 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/model/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SudokuSolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1716">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Driver/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/BackTracking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GUI/model/CellTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/model/Grid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="660">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
@@ -594,15 +647,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controller/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/model/Grid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="318">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/SudokuReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/SudokuAlgorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/BackTracking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/DepthFirstSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/OnlyOneValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3237#3238#0" expanded="true" />
-            <element signature="e#3280#3281#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Algorithms/StochasticSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="112" column="9" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/BackTrackingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="57" column="161" selection-start-line="57" selection-start-column="161" selection-end-line="57" selection-end-column="161" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/DepthFirstSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="63" column="165" selection-start-line="63" selection-start-column="165" selection-end-line="63" selection-end-column="165" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/OnlyOneValueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/StochasticSearchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Algorithms/SudokuAlgorithmsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/SudokuWriterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/SudokuReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/common/ValidatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GUI/controller/ControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
         </state>
       </provider>
     </entry>

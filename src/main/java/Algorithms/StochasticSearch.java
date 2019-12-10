@@ -1,8 +1,4 @@
 package Algorithms;
-
-
-import model.SudokuWriter;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
@@ -12,18 +8,15 @@ public class StochasticSearch extends SudokuAlgorithms{
     public int size;
     public String[] domain;
     public String outputFileName;
-    SudokuWriter sudokuWriter;
     public int count=0;
     public String[][] board;
 
 
 
-    public StochasticSearch(String[][] puzzle,String[][] board, int size,String[] domain,String outputFileName,SudokuWriter sudokuWriter){
+    public StochasticSearch(String[][] puzzle,String[][] board, int size,String[] domain){
         this.puzzle=puzzle;
         this.size=size;
         this.domain=domain;
-        this.outputFileName=outputFileName;
-        this.sudokuWriter=sudokuWriter;
         this.board=board;
     }
 
@@ -118,7 +111,6 @@ public class StochasticSearch extends SudokuAlgorithms{
         else{
             System.out.println("The sudoku puzzle is not solvable");
         }
-        sudokuWriter.writeToText(outputFileName,puzzle,board,domain,count,size,super.getTime(),"Stochastic Search");
         return puzzle;
 
     }

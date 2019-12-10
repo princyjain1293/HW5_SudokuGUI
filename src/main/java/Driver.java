@@ -1,4 +1,4 @@
-package GUI.Driver;
+
 import javax.swing.JFrame;
 
 import GUI.controller.Controller;
@@ -10,7 +10,7 @@ public class Driver {
 
     public static void main(String[] args) {
 
-//        Game game = new Game(); // model
+//        Game game = new Game(); // common
         View view = new View(); // view
         Controller controller = new Controller(view); // controller
 
